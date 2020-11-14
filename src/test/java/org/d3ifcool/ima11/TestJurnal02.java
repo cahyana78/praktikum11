@@ -1,4 +1,4 @@
-package org.d3ifcool.ima10;
+package org.d3ifcool.ima11;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,12 +9,12 @@ import java.io.*;
 public class TestJurnal02 {
 
     private static final String[] INPUT = {
-            "1","2",
-			"3","4"
-    };
+            "1 8 1 1 2 6 8 10 9 3 -1",
+			"4 8 3 2 8 7 -1"
+	};
     private static final String[] OUTPUT = {
-            "BUKAN","YA",
-			"YA","BUKAN"
+            "10 9 8 8 6 3 2 1 1 1",
+			"10 9 8 8 6 3 2 1 1 1"
     };
 
     @Test

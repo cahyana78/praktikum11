@@ -1,4 +1,4 @@
-package org.d3ifcool.ima10;
+package org.d3ifcool.ima11;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,10 +12,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestTP02 {
 
     private static final String[] INPUT = {
-            "5","9"
+            "10\n1 8 1 1 2 6 8 10 9 3",
+			"6\n4 8 3 2 8 7"
     };
     private static final String[] OUTPUT = {
-            "120","362880"
+            "10 9 8 8 6 3 2 1 1 1",
+			"8 8 7 4 3 2"
     };
 
     @Test
