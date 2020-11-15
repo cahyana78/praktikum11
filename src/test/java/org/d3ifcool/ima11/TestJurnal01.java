@@ -23,8 +23,10 @@ public class TestJurnal01 {
         System.setOut(new PrintStream(bos));
 
         Jurnal02.main(null);
+		
+		String test = bos.toString();
 
-        assertTrue(bos == "Dira" || bos == "Radi" || bos == "Idar");
+        assertTrue(test == "Dira" || test == "Radi" || test == "Idar");
         
 
         System.setOut(originalOut);
