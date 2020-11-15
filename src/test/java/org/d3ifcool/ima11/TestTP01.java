@@ -9,6 +9,10 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Test;
+
+import java.io.*;
+
 public class TestTP01 {
 
     private static final String[] INPUT = {
@@ -27,7 +31,9 @@ public class TestTP01 {
 
         Jurnal02.main(null);
 
-        assertTrue("Dira" || "Radi" || "Idar" + "\n", bos.toString());
+        String test = bos.toString();
+
+        assertTrue(test == "Dira" || test == "Radi" || test == "Idar");
         
 
         System.setOut(originalOut);
