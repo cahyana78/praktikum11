@@ -9,7 +9,7 @@ import java.io.*;
 
 public class TestJurnal01 {
 	
-	private static final String INPUT = {
+	private static final String[] INPUT = {
             "Dira\nRadi\nIdar\n-"
     };
 
@@ -24,7 +24,7 @@ public class TestJurnal01 {
 
         Jurnal02.main(null);
 
-        assertTrue("Dira" || "Radi" || "Idar" + "\n", bos.toString());
+        assertTrue(bos == "Dira" || bos == "Radi" || bos == "Idar");
         
 
         System.setOut(originalOut);
