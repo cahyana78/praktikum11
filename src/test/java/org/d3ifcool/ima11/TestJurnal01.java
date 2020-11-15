@@ -1,6 +1,12 @@
 package org.d3ifcool.ima11;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -18,7 +24,7 @@ public class TestJurnal01 {
         InputStream originalIn = System.in;
         PrintStream originalOut = System.out;
 
-        System.setIn(new ByteArrayInputStream(INPUT.getBytes()));
+        System.setIn(new ByteArrayInputStream(INPUT[0].getBytes()));
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(bos));
 

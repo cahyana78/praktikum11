@@ -25,7 +25,7 @@ public class TestTP01 {
         InputStream originalIn = System.in;
         PrintStream originalOut = System.out;
 
-        System.setIn(new ByteArrayInputStream(INPUT.getBytes()));
+        System.setIn(new ByteArrayInputStream(INPUT[0].getBytes()));
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(bos));
 
