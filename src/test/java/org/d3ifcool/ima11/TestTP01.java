@@ -7,7 +7,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestTP01 {
 
@@ -27,9 +27,7 @@ public class TestTP01 {
 
         Jurnal02.main(null);
 
-        assertEquals("Dira" + "\n", bos.toString())
-		|| assertEquals("Radi" + "\n", bos.toString())
-		|| assertEquals("Idar" + "\n", bos.toString());
+        assertTrue("Dira" || "Radi" || "Idar" + "\n", bos.toString());
         
 
         System.setOut(originalOut);
