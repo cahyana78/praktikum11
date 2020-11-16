@@ -28,7 +28,7 @@ public class TestJurnal01 {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(bos));
 
-        Jurnal02.main(null);
+        Jurnal01.main(null);
 		
 		String test = bos.toString();
 
