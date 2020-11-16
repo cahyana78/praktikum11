@@ -29,7 +29,7 @@ public class TestTP01 {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(bos));
 
-        Jurnal02.main(null);
+        TP01.main(null);
 
         String test = bos.toString();
 
