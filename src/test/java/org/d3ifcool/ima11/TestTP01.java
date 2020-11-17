@@ -33,7 +33,7 @@ public class TestTP01 {
 
         String test = bos.toString();
 
-        assertTrue(test == "Dira" || test == "Radi" || test == "Idar");
+        assertTrue(test.equals("Dira") || test.equals("Radi") || test.equals("Idar"));
         
 
         System.setOut(originalOut);
